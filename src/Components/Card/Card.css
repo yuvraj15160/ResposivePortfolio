@@ -1,0 +1,40 @@
+.cards{
+     width: 10rem;
+     height:14rem;
+     position: relative;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 0.2rem;
+     text-align: center;
+     background-color: rgba(255, 255, 255, 0.26);
+     
+     border:7px solid var(--orangeCard);
+     box-shadow: var(--boxShadow);
+     border-radius: 20px;
+     padding: 0 26px 2rem 26px;
+     margin:2px;
+}
+
+.cards >:nth-child(3){
+    color: var(--gray);
+    font-size: 15px;
+}
+.cards > img{
+    transform: scale(0.6);
+    margin-bottom: -1rem;
+}
+.c-button{
+    background-color: #ffffff;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0, 0.08);
+    color: #5290fd;
+    /* border-radius: 7px; */
+    border:none;
+    font-size: 18px;
+    padding:10px;
+}
+@media screen and (max-width: 480){
+    .cards{
+        width: auto;
+    }
+}

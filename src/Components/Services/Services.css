@@ -1,0 +1,74 @@
+.services{
+    padding: 0 3rem;
+    display: flex;
+     position: relative;
+    height: 90vh;
+    margin: 3rem 0 13rem 0;
+}
+
+.services > *{
+    position: absolute;
+}
+.awesome{
+    display:flex;
+    position: relative;
+    flex-direction: column;
+}
+.awesome >:nth-child(1){
+   color: var(--black);
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+.awesome >:nth-child(2){
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.awesome >:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+.s-button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.car{
+    display:flex;
+    position: relative;
+}
+
+.car >* {
+    position: absolute;
+}
+/* 
+blur */
+.s-blur{
+    top:20rem;
+    left: 0;
+}
+.s-blur2{
+    top:10rem;
+    left:30rem;
+}
+@media screen and (max-width: 480px){
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+    .car{
+        display:flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .car > *{
+        /* display:flex;
+        flex-direction:column; */
+        position: static;
+
+    }
+}
